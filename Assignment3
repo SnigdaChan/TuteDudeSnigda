@@ -1,0 +1,18 @@
+#TASK 1
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+result=factorial(int(input('Enter a number: ')))
+print("Factorial is: ",result)
+
+#TASK 2
+import math
+num=int(input('enter a number:'))
+sqrt=math.sqrt(num)
+print('square root:',sqrt)
+loge=math.log(num)
+print('logarithm:',loge)
+sin=math.sin(num)
+print('sine:',sin)
