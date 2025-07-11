@@ -1,0 +1,19 @@
+#TASK 1
+student_marks = {}
+for i in range(5):
+    name = input(f"Enter name of student {i+1}: ")
+    marks = int(input(f"Enter marks for {name}: "))
+    student_marks[name] = marks
+search_name = input("Enter the student's name to search for their marks: ")
+
+if search_name in student_marks:
+    print(f"{search_name}'s marks: {student_marks[search_name]}")
+else:
+    print("Student not found in the record.")
+
+#TASK 2
+numbers = list(range(1, 11))
+first_five = numbers[:5]
+reversed_five = first_five[::-1]
+print("Extracted List:", first_five)
+print("Reversed List:", reversed_five)
